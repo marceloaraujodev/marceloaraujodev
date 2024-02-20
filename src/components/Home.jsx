@@ -1,7 +1,5 @@
 import 'bootstrap-icons/font/bootstrap-icons.css';
 
-
-
 export default function Home() {
 
   return (
@@ -14,6 +12,7 @@ export default function Home() {
             <i className="bi bi-linkedin social-media"></i>
             <i className="bi bi-envelope social-media"></i>
         </div>
+          <img className='photo' src='/profilePicSquare2.jpg' alt=''/>
     </section>
   )
 }
