@@ -4,7 +4,6 @@ export default function Home() {
 
   return (
     <section className="home">
-
         <div className="name">MARCELO ARAUJO</div>
         <div className="title">DEVELOPER</div>
         <div className='social'>
@@ -13,6 +12,7 @@ export default function Home() {
             <i className="bi bi-envelope social-media"></i>
         </div>
           <img className='photo' src='/profilePicSquare2.jpg' alt=''/>
+
     </section>
   )
 }

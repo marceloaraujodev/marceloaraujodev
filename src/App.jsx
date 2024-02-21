@@ -2,6 +2,7 @@ import Nav from './components/Nav';
 import Home from './components/Home';
 import FooterComponent from './components/Footer';
 import Projects from './components/Projects';
+import About from './components/About';
 
 import './App.css'
 
@@ -15,9 +16,10 @@ function App() {
         <main>
           <Home />
           <Projects />
+          <About />
         </main>
-      </div>
         <FooterComponent />
+      </div>
     </>
   )
 }
