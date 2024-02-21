@@ -1,0 +1,2 @@
+create a modal for the pictures
+create css effect for hover on picture
