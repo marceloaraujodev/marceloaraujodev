@@ -11,7 +11,7 @@ export default function Home() {
             <i className="bi bi-linkedin social-media"></i>
             <i className="bi bi-envelope social-media"></i>
         </div>
-          <img className='photo' src='/profilePicSquare2.jpg' alt=''/>
+          <img className='photo' src='/profilePicSquare2.png' alt=''/>
 
     </section>
   )

@@ -73,16 +73,50 @@ body {
   flex-direction: column;
   min-height: 100vh;
 }
-.container {
+.overlay{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+}
+dialog{
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  max-height: 90%;
+  max-width: 700px;
+  /* overflow: auto; */
+  background-color: white;
+  padding: 20px;
+  z-index: 1000;
+}
+.modal-content{
+  position: relative;
+}
+.btnModal{
+  position: absolute;
+  top: -55px;
+  right: -20px;
+  border: none;
+  background-color: transparent;
+  font-size: 1.3rem;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+}
+/* .container {
   max-width: 1440px;
   display: flex;
   justify-content: center;
   flex-direction: column;
   flex: 1;
   align-items: center;
-  /* height: 100vh; */
   position: relative;
-}
+} */
 .header {
   width: 100%;
   position: fixed;
@@ -96,8 +130,8 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-left: auto;
-  margin-right: auto;
+  /* margin-left: auto; */
+  /* margin-right: auto; */
   height: 4rem;
   font-weight: 600;
   z-index: 200;
@@ -122,6 +156,8 @@ body {
 p {
   color: rgb(0, 0, 0);
 }
+
+
 section{
   padding-bottom: 100px;
 }
@@ -144,7 +180,12 @@ main{
 .home{
   /* margin-bottom: 30rem; */
   width: 100%;
+  perspective: 500px;
+  height: 800px;
   /* padding-top: 3rem; */
+}
+.about-section{
+  background-color: blue;
 }
 .about{
   width: 60%;
@@ -196,13 +237,20 @@ main{
   border-bottom-left-radius: 20%; 
   border-bottom-right-radius: 20%; 
   right: 7%;
-  top: 170px
+  top: 170px;
+  transition: transform 1s;
+  animation: 1.5s cubic-bezier(0.39, 0.575, 0.565, 1) 0s 1 normal both running
+    fade-in;
+}
+.photo:hover{
+  transform: translateZ(10px);
+
 }
 .project-title{
   font-size: 1.5rem;
   font-weight: bold;
   position: relative;
-  margin-top: 600px;
+  /* margin-top: 250px; */
 }
 .project-title::after{
   content: '';
@@ -215,8 +263,11 @@ main{
 }
 .projects{
   margin-top: 30px;
-  width: 80%;
+  width: 60%;
   text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .image{
@@ -247,4 +298,104 @@ footer{
 }
 .social-media-footer{
   font-size: 1.5rem;
+}
+
+@media (max-width: 1024px) {
+  .nav_menu{
+    padding: 0;
+  }
+  .nav_list{
+    padding: 0;
+  }
+  .photo{
+    width: 300px;
+    height: 300px;
+    right: 5px;
+    top: 220px;
+  }
+  .name {
+    font-size: 3rem;
+    top: 150px;
+    left: 10px;
+  }
+  .title {
+    font-size: 3rem;
+    top: 230px;
+    left: 10px;
+  }
+  .social {
+    top: 330px;
+    left: 10px;
+  }
+}
+@media (max-width: 720px) {
+  
+  .nav_menu{
+    padding: 0;
+  }
+  .nav_list{
+    padding: 0;
+  }
+  .photo{
+    width: 250px;
+    height: 250px;
+    right: 5px;
+    top: 220px;
+  }
+  .name {
+    font-size: 2.5rem;
+    top: 150px;
+    left: 25px;
+  }
+  .title {
+    font-size: 2.5rem;
+    top: 200px;
+    left: 25px;
+  }
+  .social {
+    top: 270px;
+    left: 25px;
+  }
+  .about {
+    width: 60%;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media (max-width: 430px) {
+  .home {
+    perspective: 500px;
+    height: 500px;
+    }
+  .nav_item {
+    width: 100%;
+    padding: 0 15px;
+  }
+  .photo{
+    width: 250px;
+    height: 250px;
+    right: -20px;
+    top: 150px;
+  }
+  .name {
+    font-size: 2rem;
+    top: 50px;
+    left: 25px;
+  }
+  .title {
+    font-size: 2rem;
+    top: 100px;
+    left: 25px;
+  }
+  .social {
+    top: 160px;
+  }
+  .social-media {
+    padding-right: 20px;
+    font-size: 1rem;
+    padding-left: 5px;
+}
+
 }
