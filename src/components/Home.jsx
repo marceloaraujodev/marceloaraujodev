@@ -3,7 +3,7 @@ import 'bootstrap-icons/font/bootstrap-icons.css';
 export default function Home() {
 
   return (
-    <section className="home">
+    <section className="home" id='home'>
         <div className="name">MARCELO ARAUJO</div>
         <div className="title">DEVELOPER</div>
         <div className='social'>

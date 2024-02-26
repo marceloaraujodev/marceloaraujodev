@@ -18,16 +18,18 @@ export default function About() {
   return (
     <>
 
-      <div className="about-title">About Me</div>
+      <div className="about-title" id='about'>About Me</div>
       <section className="about">
         <p>
-          Hi thanks for your interest in my portfolio. This is a about me
-          section so lets try not to be to long. I&apos;ve had a few different
-          careers over the years. I&apos;m a former professional surfer, I
-          competed in the world qualifying series from 2001 until 2008.
+        Hi, thanks for your interest in my portfolio. I&apos;ve had a few different careers over the years. I&apos;m a former professional surfer, I competed in the World Qualifying Series from 2001 until 2007.
           <br></br>
           <br></br>
-          In the middle of 2008 I started a online business reselling products
+          In 2008 I started working with WaveDataSystems using their beach bytes software,
+          a program that calculates the scores for surfing competition. I worked with them 
+          for one year. 
+          <br></br>
+          <br></br>
+          In the middle of 2009 I started a online business reselling products
           that I imported from china on ebay and amazon. In 2012 I started
           working with photography, I&apos;ve started with portraits then
           shooting behind the scenes of movies and then moved into fashion
@@ -35,7 +37,7 @@ export default function About() {
           <br></br>
           <br></br>
           In the middle of 2023 I started studing front and backend development.
-          I always had a strong interested in coding since I made my first
+          I always had a strong interest in coding since I made my first
           website as a portfolio for my surfing career back in 2002. I used to
           stay all night long researching on google to fix small bugs on my html
           code.
@@ -73,19 +75,19 @@ export default function About() {
         <img
           src="/selfie.jpg"
           alt="portrait in the mirror"
-          className="image"
+          className="about-images"
           onClick={() => openModal("/selfie.jpg")}
         />
         <img
           src="/work.jpg"
           alt="woman portrait"
-          className="image"
+          className="about-images"
           onClick={() => openModal('/work.jpg')}
         />
         <img
           src="/IMG_3592-2.jpg"
           alt="surfing"
-          className="image"
+          className="about-images"
           onClick={() => openModal("/IMG_3592-2.jpg")}
         />
       </section>
