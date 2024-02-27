@@ -1,17 +1,42 @@
 import Nav from './components/Nav';
-import Home from './components/Home';
 import FooterComponent from './components/Footer';
+import Home from './components/Home';
 import Projects from './components/Projects';
 import About from './components/About';
+// import { useEffect } from 'react';
 
 import './App.css';
 
+
+
 function App() {
+
+  // useEffect(() => {
+  //   let options = {
+  //     root: document.querySelector("#scrollArea"),
+  //     rootMargin: "0px",
+  //     threshold: 0.5,
+  //   };
+  //   let target = document.getElementById('about')
+  //   let callback = (entries, observer) => {
+  //     entries.forEach((entry) => {
+  //         if(entry.isIntersecting){
+  //           console.log('reached about')
+  //         }
+  //     });
+  //   };
+    
+  //   let observer = new IntersectionObserver(callback, options);
+
+  //   observer.observe(target)
+
+  // }, [])
+
   return (
     <>
       <div className="container">
         <Nav />
-        <main>
+        <main id='lazy-load-section'>
           <Home />
           <div className="project-title"  id='projects'>Projects</div>
           <Projects
@@ -44,7 +69,6 @@ function App() {
             text2="Source Code"
             href2="https://github.com/marceloaraujodev/fipe"
           />
-
           <About />
         </main>
         <FooterComponent />
