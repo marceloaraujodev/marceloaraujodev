@@ -1,10 +1,23 @@
 import { useState} from 'react';
 import Modal from './Modal';
+import { useInView } from 'react-intersection-observer';
 
 
 export default function About() {
   const [modalOpen, setModalOpen] = useState(false);
   const [selectedImg, setSelectedImg] = useState(null);
+
+  const { ref, inView } = useInView({
+    rootMargin: '0px',
+    threshold: 0,
+    triggerOnce: true,
+  });
+  const { ref: imgRef, inView: imgView } = useInView({
+    rootMargin: '0px',
+    threshold: 0,
+    triggerOnce: true,
+  });
+
 
   function openModal(imgSrc) {
     setModalOpen(true);
@@ -17,9 +30,10 @@ export default function About() {
 
   return (
     <>
-
-      <div className="about-title" id='about'>About Me</div>
-      <section className="about">
+     
+      <div className={`about-container ${inView ? 'animated ' : ''}`} ref={ref}>
+      <div className={`about-title`}  id='about'>About Me</div>
+      <section className={`about `} >
         <p>
         Hi, thanks for your interest in my portfolio. I&apos;ve had a few different careers over the years. I&apos;m a former professional surfer, I competed in the World Qualifying Series from 2001 until 2007.
           <br></br>
@@ -72,6 +86,9 @@ export default function About() {
             </li>
             <li>Zero to Mastery - Complete Web Developer</li>
           </ul>
+      </section>
+      </div>
+      <div className={`about-img-container ${imgView ? 'animated2' : ''}`} ref={imgRef}>
         <img
           src="/selfie.jpg"
           alt="portrait in the mirror"
@@ -90,13 +107,11 @@ export default function About() {
           className="about-images"
           onClick={() => openModal("/IMG_3592-2.jpg")}
         />
-      </section>
+        </div>
       {modalOpen && <Modal isOpen={modalOpen} >
-      <img src={selectedImg} alt='selected img'/>
+      <img src={selectedImg} alt='selected img' />
       <button className='btnModal' onClick={closeModal}>X</button>
       </Modal>}
-
-
     </>
   );
 }

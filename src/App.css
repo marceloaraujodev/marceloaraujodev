@@ -73,6 +73,7 @@ body {
   flex-direction: column;
   min-height: 100vh;
 }
+
 .overlay{
   position: fixed;
   top: 0;
@@ -191,19 +192,27 @@ main{
   perspective: 500px;
   height: 700px;
 }
-.about-section{
-  background-color: blue;
+.about-container{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  opacity: 0;
 }
 .about{
   width: 60%;
-  margin-top: 30px;
+  margin-top: 80px;
 }
 .about-title{
   font-size: 1.5rem;
   font-weight: bold;
   text-align: center;
-  position: relative;
+  position: absolute;
+  top: 0;
+  left: auto;
 }
+
 .about-title::after{
   content: '';
   position: absolute;
@@ -216,6 +225,9 @@ main{
 .about ul li{
   line-height: 2rem;
   letter-spacing: 1px;
+}
+.about-img-container{
+  margin-bottom: 200px;
 }
 .title {
   font-size: 4rem;
@@ -255,16 +267,15 @@ main{
 .photo:hover{
   transform: translateZ(10px);
 }
-.project-title{
-  transition: transform 1s;
-  animation: 1.9s cubic-bezier(0.39, 0.575, 0.565, 1) 0s 1 normal both running
-  fade-in;
-}
+
 .project-title{
   font-size: 1.5rem;
   font-weight: bold;
   position: relative;
-  /* margin-top: 250px; */
+}
+.animate5{
+  animation: 1.9s cubic-bezier(0.39, 0.575, 0.565, 1) 0s 1 normal both running
+  fade-in;
 }
 .project-title::after{
   content: '';
@@ -280,17 +291,44 @@ main{
   width: 100%;
   display: flex;
   gap: 50px;
-  transition: transform 1s;
-  animation: 1.9s cubic-bezier(0.39, 0.575, 0.565, 1) 0s 1 normal both running
-  fade-in;
 }
 .projects-images{
   width: 500px;
+  display: block;
 }
+.animated3{
+  animation: fade-left 1s linear forwards;
+  display: block;
+}
+@keyframes fade-left {
+  from {
+    transform: scale(.8) translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
 .projects-info{
-  display: flex;
+  /* display: none; */
   flex-direction: column;
   justify-content: space-between;
+}
+.animated4{
+  animation: fade-right 1s linear forwards;
+  display: flex;
+}
+@keyframes fade-right {
+  from {
+    transform: scale(.8) translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1) translateX(0);
+    opacity: 1;
+  }
 }
 .projects-item-title{
   font-weight: bold;
@@ -298,7 +336,6 @@ main{
 }
 .projects-description{
   line-height: 1.7rem;
-
 }
 .projects-langagues{
   text-align: center;
@@ -358,6 +395,24 @@ footer{
 }
 .social-media-footer{
   font-size: 1.5rem;
+}
+
+.animated{
+  animation: fade 1.5s linear forwards;
+  opacity: 1;
+}
+.animated2{
+  animation: fade 3s linear forwards;
+}
+@keyframes fade {
+  from {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
 }
 
 @media (max-width: 1024px) {
