@@ -32,7 +32,7 @@ export default function Nav() {
                     <a onClick={() => scrollToSection('projects')}>Projects</a>
                     </li>
                     <li className="nav_item">
-                    <a onClick={() => scrollToSection('contact')}>Contact</a>
+                    <a href="mailto:marcelo.dev.coder@gmail.com">Contact</a>
                     </li>
                 </ul>
             </div>

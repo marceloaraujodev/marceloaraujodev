@@ -2,7 +2,6 @@ import { useState} from 'react';
 import Modal from './Modal';
 import { useInView } from 'react-intersection-observer';
 
-
 export default function About() {
   const [modalOpen, setModalOpen] = useState(false);
   const [selectedImg, setSelectedImg] = useState(null);
@@ -31,8 +30,8 @@ export default function About() {
   return (
     <>
      
-      <div className={`about-container ${inView ? 'animated ' : ''}`} ref={ref}>
-      <div className={`about-title`}  id='about'>About Me</div>
+      <div className={`about-container ${inView ? 'animated ' : ''}`} ref={ref} id='about'>
+      <div className={`about-title`} >About Me</div>
       <section className={`about `} >
         <p>
         Hi, thanks for your interest in my portfolio. I&apos;ve had a few different careers over the years. I&apos;m a former professional surfer, I competed in the World Qualifying Series from 2001 until 2007.
@@ -63,7 +62,7 @@ export default function About() {
           and have a strong mindset to get things done and problems solved.
           <br></br>
           <br></br>
-          Here are some of the courses that I took:
+          Courses and Skills:
           <br></br>
           <br></br>
         </p>
@@ -85,6 +84,9 @@ export default function About() {
               hours of videos by Dr. Angela Yu
             </li>
             <li>Zero to Mastery - Complete Web Developer</li>
+            <li>Photoshop</li>
+            <li>Adobe Lightroom</li>
+            <li>Adobe Premiere</li>
           </ul>
       </section>
       </div>

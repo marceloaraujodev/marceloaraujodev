@@ -14,7 +14,7 @@ export default function BlogProject() {
 
   return (
     <>
-    <div className={`project-title ${inViewTitle ? 'animate5' : ''}`}  id='projects' ref={titleRef}>Projects</div>
+    <div className={`project-title ${inViewTitle ? 'animated5' : ''}`}  id='projects' ref={titleRef}>Projects</div>
     <section className={`projects`}>
     <div >
       <img
