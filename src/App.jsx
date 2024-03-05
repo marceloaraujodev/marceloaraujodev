@@ -18,10 +18,10 @@ function App() {
         <Nav />
         <main>
           <Home />
-          <BlogProject />
-          <ShopCartProject />
-          <FipeProject />
-          <About />
+          {/* <BlogProject /> */}
+          {/* <ShopCartProject /> */}
+          {/* <FipeProject /> */}
+          {/* <About /> */}
         </main>
         <FooterComponent />
       </div>

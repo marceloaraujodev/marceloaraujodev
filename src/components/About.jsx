@@ -69,19 +69,19 @@ export default function About() {
         <ul>
             <li>
               The Complete JavaScript Course:<br></br>From Zero to Expert 68.5
-              total hours of videos by Jonas Schmedtmann
+              hours by Jonas Schmedtmann
             </li>
             <li>
-              React - The Complete Guide 2024 Video:<br></br> 68.5 total hours
+              React - The Complete Guide 2024 Video:<br></br> 68.5 
               by Maximilian Schwarzmüller
             </li>
             <li>
               Node.js, Express, MongoDB & More The Complete Bootcamp 2024:
-              <br></br> 42 total hours of videos by Jonas Schmedtmann
+              <br></br> 42 hours  by Jonas Schmedtmann
             </li>
             <li>
-              The Complete 2024 Web Development Bootcamp:<br></br> 62 total
-              hours of videos by Dr. Angela Yu
+              The Complete 2024 Web Development Bootcamp:<br></br> 62 hours 
+              by Dr. Angela Yu
             </li>
             <li>Zero to Mastery - Complete Web Developer</li>
             <li>Photoshop</li>
