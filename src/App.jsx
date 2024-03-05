@@ -19,7 +19,7 @@ function App() {
         <main>
           <Home />
           <BlogProject />
-          {/* <ShopCartProject /> */}
+          <ShopCartProject />
           {/* <FipeProject /> */}
           {/* <About /> */}
         </main>
