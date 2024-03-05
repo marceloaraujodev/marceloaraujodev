@@ -30,7 +30,7 @@ export default function BlogProject() {
       <div className="projects-langagues">React, Javascript, Nodejs, MongoDB, CSS, HTML</div>
       <div className="btn-container">
         <Button text='Live Code' href="https://summer-lab-1399.on.fleek.co/" />
-        <Button text="Source Code" href="https://github.com/marceloaraujodev/Blog" />
+        <Button text="Source Code" href="https://github.com/marceloaraujodev/Portfolio-Projects/tree/master/Blog" />
       </div>
     </div>
     </section>  
