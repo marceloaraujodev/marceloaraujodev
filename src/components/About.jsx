@@ -1,5 +1,6 @@
 import { useState} from 'react';
 import Modal from './Modal';
+import Resume from './Resume';
 import { useInView } from 'react-intersection-observer';
 
 export default function About() {
@@ -114,6 +115,8 @@ export default function About() {
       <img src={selectedImg} alt='selected img' />
       <button className='btnModal' onClick={closeModal}>X</button>
       </Modal>}
+
+      <Resume />
     </>
   );
 }

@@ -228,6 +228,13 @@ main{
   letter-spacing: 1px;
 }
 .about-img-container{
+  margin-bottom: 80px;
+}
+.resume-container{
+  position: relative;
+  opacity: 0;
+}
+.resume{
   margin-bottom: 200px;
 }
 .title {
