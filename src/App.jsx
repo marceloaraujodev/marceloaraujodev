@@ -20,8 +20,8 @@ function App() {
           <Home />
           <BlogProject />
           <ShopCartProject />
-          {/* <FipeProject /> */}
-          {/* <About /> */}
+          <FipeProject />
+          <About />
         </main>
         <FooterComponent />
       </div>
