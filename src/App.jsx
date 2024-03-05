@@ -18,7 +18,7 @@ function App() {
         <Nav />
         <main>
           <Home />
-          {/* <BlogProject /> */}
+          <BlogProject />
           {/* <ShopCartProject /> */}
           {/* <FipeProject /> */}
           {/* <About /> */}
