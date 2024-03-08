@@ -25,7 +25,7 @@ export default function FipeProject() {
           <p className="projects-description">A fast app for checking car prices in Brazil. Choose a make, model and year and you will get the average selling prices for that car in Brazil. An API was used to get all the data need it.</p>
           <div className="projects-langagues">React, Bootstrap, Javascript</div>
           <div className="btn-container">
-            <Button text='Live Code' href="https://twilight-smoke-3755.on.fleek.co/" />
+            <Button text='Live Code' href="https://portfolio-projects-irah.onrender.com/" />
             <Button text="Source Code" href="https://github.com/marceloaraujodev/fipe" />
           </div>
         </div>
