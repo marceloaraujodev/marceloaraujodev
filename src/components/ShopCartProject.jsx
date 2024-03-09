@@ -13,7 +13,7 @@ export default function ShopCartProject() {
 
   return (
     <section className='projects'>
-    <div >
+    <div className='project-image-container'>
       <img
         ref={shopRefImg}
         className={`projects-images ${inViewShopImg ? 'animated3' : ''}`}

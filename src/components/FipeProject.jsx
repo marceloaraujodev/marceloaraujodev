@@ -12,7 +12,7 @@ export default function FipeProject() {
 
   return (
     <section className='projects'>
-        <div >
+        <div className='project-image-container' >
           <img
             ref={fipeRefImg}
             className={`projects-images ${inViewFipeImg ? 'animated3' : ''}`}

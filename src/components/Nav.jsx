@@ -21,6 +21,7 @@ export default function Nav() {
         <nav className="nav">
             {/* <div className="logo">Logo</div> */}
             <div className="nav_menu">
+            <i className="bi bi-list small-menu"></i>
                 <ul className="nav_list">
                     <li className="nav_item">
                         <a onClick={() => scrollToSection('home')}>Home</a>
