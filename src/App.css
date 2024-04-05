@@ -294,10 +294,9 @@ main {
   gap: 50px;
   overflow-x: hidden;
 }
-.project-image-container{
-  border: 2px solid black;
-}
+
 .projects-images {
+  border: 2px solid black;
   width: 500px;
   transform: translateX(-500px) translateZ(0);
 }
