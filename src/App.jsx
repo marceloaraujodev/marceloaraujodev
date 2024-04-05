@@ -7,6 +7,7 @@ import BlogProject from './components/BlogProject';
 import ShopCartProject from './components/ShopCartProject';
 import FipeProject from './components/FipeProject';
 import './App.css';
+import CharterBoats from './components/CharterBoats';
 
 
 
@@ -18,6 +19,7 @@ function App() {
         <Nav />
         <main>
           <Home />
+          <CharterBoats />
           <BlogProject />
           <ShopCartProject />
           <FipeProject />
