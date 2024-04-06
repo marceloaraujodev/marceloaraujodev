@@ -421,7 +421,7 @@ footer {
     opacity: 1;
   }
 }
-/* @media (max-width: 1600px) {
+@media (max-width: 1600px) {
   .photo {
     right: -5%;
     top: 170px;
@@ -431,7 +431,7 @@ footer {
   .photo {
     display: none;
   }
-} */
+}
 
 @media (max-width: 768px) {
   section {
