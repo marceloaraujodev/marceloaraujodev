@@ -26,7 +26,7 @@ export default function CharterBoats() {
     </div>
     <div className={`projects-info ${inViewBlogInfo ? 'animated4' : ''}`} ref={blogRefInfo}>
       <p className="projects-item-title">Charter</p>
-      <p className="projects-description">Charter website for Yacht company. Designed with Nextjs, using Fullcalendar, framer motion for css effects, </p>
+      <p className="projects-description">Charter website for Yacht company. Designed with Nextjs, using Fullcalendar, framer motion for css effects and more. This project is still being developed and the client authorized me to used in my portfolio. Database with MongoDB, Login and dashboard features are being implemented</p>
       <div className="projects-langagues">React, Javascript, Nextjs, MongoDB, CSS, HTML</div>
       <div className="btn-container">
         <Button text='Live Code' href="https://charter-ebon.vercel.app/" />
