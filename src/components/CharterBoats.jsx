@@ -29,7 +29,7 @@ export default function CharterBoats() {
       <p className="projects-description">Charter website for Yacht company. Designed with Nextjs, using Fullcalendar, framer motion for css effects, </p>
       <div className="projects-langagues">React, Javascript, Nextjs, MongoDB, CSS, HTML</div>
       <div className="btn-container">
-        <Button text='Live Code' href="https://charter-d8sj736z8-marcelos-projects-223123de.vercel.app/" />
+        <Button text='Live Code' href="https://charter-ebon.vercel.app/" />
         <Button text="Source Code" href="https://github.com/marceloaraujodev/charter" />
       </div>
     </div>
