@@ -8,6 +8,7 @@ import ShopCartProject from './components/ShopCartProject';
 import FipeProject from './components/FipeProject';
 import './App.css';
 import CharterBoats from './components/CharterBoats';
+import FigmaToCode from './components/FigmaToCode';
 
 
 
@@ -20,6 +21,7 @@ function App() {
         <main>
           <Home />
           <CharterBoats />
+          <FigmaToCode />
           <BlogProject />
           <ShopCartProject />
           <FipeProject />

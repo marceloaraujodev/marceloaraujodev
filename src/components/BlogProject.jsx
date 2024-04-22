@@ -6,15 +6,11 @@ export default function BlogProject() {
     blogRefImg, 
     inViewBlogImg,
     blogRefInfo,
-    inViewBlogInfo,
-    titleRef,
-    inViewTitle
-  
+    inViewBlogInfo, 
   } = useIntersectionObserver();
 
   return (
     <>
-    <div className={`project-title ${inViewTitle ? 'animated5' : ''}`}  id='projects' ref={titleRef}>Projects</div>
     <section className={`projects`}>
     <div className='project-image-container'>
       <img
