@@ -10,6 +10,7 @@ import './App.css';
 import CharterBoats from './components/CharterBoats';
 import FigmaToCode from './components/FigmaToCode';
 import FigmaToCode2 from './components/FigmaToCode2';
+import ConceptColchoes from './components/ConceptColchoes';
 
 
 
@@ -26,6 +27,7 @@ function App() {
           <BlogProject />
           <FigmaToCode2 />
           <ShopCartProject />
+          <ConceptColchoes />
           <FipeProject />
           <About />
         </main>
