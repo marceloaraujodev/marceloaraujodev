@@ -34,7 +34,11 @@ export default function About() {
       <div className={`about-container ${inView ? 'animated ' : ''}`} ref={ref} id='about'>
       <div className={`about-title`} >About Me</div>
       <section className={`about `} >
-        <p>
+        {/* <p className='about-text'>Born in Brazil, <span className='about-bold'>lived in Los Angeles for 14 years.</span> Currently living between Miami and Brazil. 
+        </p>
+        <p className='about-text'><span className='about-bold'>Full-Stack Software Engineer</span>. Former online Entrepreneur, Fashion photographer and professional Surfer. Happy with my new career in coding.</p> */}
+
+        <p className='about-text'>
         Hi, thanks for your interest in my portfolio. I&apos;ve had a few different careers over the years. I&apos;m a former professional surfer, I competed in the World Qualifying Series from 2001 until 2007.
           <br></br>
           <br></br>
@@ -67,7 +71,8 @@ export default function About() {
           <br></br>
           <br></br>
         </p>
-        <ul>
+
+        {/* <ul>
             <li>
               The Complete JavaScript Course:<br></br>From Zero to Expert 68.5
               hours by Jonas Schmedtmann
@@ -88,7 +93,8 @@ export default function About() {
             <li>Photoshop</li>
             <li>Adobe Lightroom</li>
             <li>Adobe Premiere</li>
-          </ul>
+        </ul> */}
+
       </section>
       </div>
       <div className={`about-img-container ${imgView ? 'animated2' : ''}`} ref={imgRef}>
