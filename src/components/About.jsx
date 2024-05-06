@@ -1,4 +1,4 @@
-import { useState} from 'react';
+import { useState } from 'react';
 import Modal from './Modal';
 import Resume from './Resume';
 import { useInView } from 'react-intersection-observer';
@@ -18,10 +18,9 @@ export default function About() {
     triggerOnce: true,
   });
 
-
   function openModal(imgSrc) {
     setModalOpen(true);
-    setSelectedImg(imgSrc)
+    setSelectedImg(imgSrc);
   }
 
   function closeModal() {
@@ -34,11 +33,13 @@ export default function About() {
       <div className={`about-container ${inView ? 'animated ' : ''}`} ref={ref} id='about'>
       <div className={`about-title`} >About Me</div>
       <section className={`about `} >
-        {/* <p className='about-text'>Born in Brazil, <span className='about-bold'>lived in Los Angeles for 14 years.</span> Currently living between Miami and Brazil. 
+
+
+              {/* <p className='about-text'>Born in Brazil, <span className='about-bold'>lived in Los Angeles for 14 years.</span> Currently living between Miami and Brazil. 
         </p>
         <p className='about-text'><span className='about-bold'>Full-Stack Software Engineer</span>. Former online Entrepreneur, Fashion photographer and professional Surfer. Happy with my new career in coding.</p> */}
 
-        <p className='about-text'>
+        <p>
         Hi, thanks for your interest in my portfolio. I&apos;ve had a few different careers over the years. I&apos;m a former professional surfer, I competed in the World Qualifying Series from 2001 until 2007.
           <br></br>
           <br></br>
@@ -71,38 +72,39 @@ export default function About() {
           <br></br>
           <br></br>
         </p>
-
-        {/* <ul>
+        <ul>
             <li>
               The Complete JavaScript Course:<br></br>From Zero to Expert 68.5
               hours by Jonas Schmedtmann
             </li>
             <li>
-              React - The Complete Guide 2024 Video:<br></br> 68.5 
-              by Maximilian Schwarzmüller
+              React - The Complete Guide 2024 Video:<br></br> 68.5 by Maximilian
+              Schwarzmüller
             </li>
             <li>
               Node.js, Express, MongoDB & More The Complete Bootcamp 2024:
-              <br></br> 42 hours  by Jonas Schmedtmann
+              <br></br> 42 hours by Jonas Schmedtmann
             </li>
             <li>
-              The Complete 2024 Web Development Bootcamp:<br></br> 62 hours 
-              by Dr. Angela Yu
+              The Complete 2024 Web Development Bootcamp:<br></br> 62 hours by
+              Dr. Angela Yu
             </li>
             <li>Zero to Mastery - Complete Web Developer</li>
             <li>Photoshop</li>
             <li>Adobe Lightroom</li>
             <li>Adobe Premiere</li>
-        </ul> */}
-
+          </ul>
       </section>
       </div>
-      <div className={`about-img-container ${imgView ? 'animated2' : ''}`} ref={imgRef}>
+      <div
+        className={`about-img-container ${imgView ? 'animated2' : ''}`}
+        ref={imgRef}
+      >
         <img
           src="/selfie.jpg"
           alt="portrait in the mirror"
           className="about-images"
-          onClick={() => openModal("/selfie.jpg")}
+          onClick={() => openModal('/selfie.jpg')}
         />
         <img
           src="/work.jpg"
@@ -114,13 +116,17 @@ export default function About() {
           src="/IMG_3592-2.jpg"
           alt="surfing"
           className="about-images"
-          onClick={() => openModal("/IMG_3592-2.jpg")}
+          onClick={() => openModal('/IMG_3592-2.jpg')}
         />
-        </div>
-      {modalOpen && <Modal isOpen={modalOpen} >
-      <img src={selectedImg} alt='selected img' />
-      <button className='btnModal' onClick={closeModal}>X</button>
-      </Modal>}
+      </div>
+      {modalOpen && (
+        <Modal isOpen={modalOpen}>
+          <img src={selectedImg} alt="selected img" />
+          <button className="btnModal" onClick={closeModal}>
+            X
+          </button>
+        </Modal>
+      )}
 
       <Resume />
     </>

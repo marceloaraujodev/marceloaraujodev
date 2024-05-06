@@ -307,6 +307,8 @@ main {
 .projects-images {
   border: 2px solid black;
   width: 500px;
+  max-height: 420px;
+  object-fit: cover;
   transform: translateX(-500px) translateZ(0);
 }
 .animated3 {
