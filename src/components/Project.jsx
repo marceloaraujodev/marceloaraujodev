@@ -104,7 +104,7 @@ const Divleft = styled.div`
     padding: 0 20px;
     gap: 15px;
     background-color: #e8e8e8;
-    box-shadow: 5px 0 8px rgba(0, 0, 0, 0.1);
+    /* box-shadow: 3px 2px 3px rgba(0, 0, 0, 0.1); */
     text-align: left;
 
     h1{
