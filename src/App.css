@@ -143,6 +143,7 @@ dialog {
   position: relative;
   width: 100%;
   overflow-x: hidden;
+  font-size: .95rem;
 }
 .nav_item a::after {
   content: '';
