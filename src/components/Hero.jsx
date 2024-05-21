@@ -1,6 +1,6 @@
 import 'bootstrap-icons/font/bootstrap-icons.css';
 
-export default function Home() {
+export default function Hero() {
 
   return (
     <section className="home" id='home'>

@@ -1,8 +1,7 @@
-
-
+import {Link} from 'react-router-dom';
+import About from './About';
 export default function Nav() {
-    
-    
+     
     const scrollToSection = (id) => {
         const navbarHeight = document.querySelector('.nav').offsetHeight;
         const section = document.getElementById(id);
@@ -24,13 +23,16 @@ export default function Nav() {
             <i className="bi bi-list small-menu"></i>
                 <ul className="nav_list">
                     <li className="nav_item">
-                        <a onClick={() => scrollToSection('home')}>Home</a>
+                        <Link to='/'>Home</Link>
+                        {/* <a onClick={() => scrollToSection('home')}>Home</a> */}
                     </li>
                     <li className="nav_item">
-                    <a onClick={() => scrollToSection('about')}>About</a>
+                    {/* <a onClick={() => scrollToSection('about')}>About</a> */}
+                    <Link to='/about'>About</Link>
                     </li>
                     <li className="nav_item">
-                    <a onClick={() => scrollToSection('projects')}>Projects</a>
+                    {/* <a onClick={() => scrollToSection('projects')}>Projects</a> */}
+                    <Link to='/projects'>Projects</Link>
                     </li>
                     <li className="nav_item">
                     <a href="mailto:marcelo.dev.coder@gmail.com">Contact</a>
@@ -42,6 +44,7 @@ export default function Nav() {
             </div> */}
         </nav>
     </header>
+
     </>
   )
 }

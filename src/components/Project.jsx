@@ -1,15 +1,12 @@
-import React from 'react'
 import styled, {css} from 'styled-components';
-import Button from './Button';
 
 const Container = styled.div`
   width: 100%;
-  /* border: 2px solid green; */
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 20px;
-  margin-bottom: 100px;
+  margin-bottom: 130px;
   `;
 const Wide = styled.div`
   width: 92%;
@@ -86,7 +83,9 @@ const Divleft = styled.div`
   /* border: 1px solid red; */
   img{
     width: 100%;
-    object-fit: cover;
+    /* height: 600px; */
+    max-height: 600px;
+    object-fit: contain;
     border-radius: 15px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   }
@@ -106,6 +105,7 @@ const Divleft = styled.div`
     gap: 15px;
     background-color: #e8e8e8;
     box-shadow: 5px 0 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
 
     h1{
       font-weight: 600;
@@ -126,9 +126,7 @@ const Divleft = styled.div`
 `;
 
 
-
-
-export default function Titles({tecnologies, mainImg, leftImg, title, liveCode, sourceCode, $btnColor }) {
+export default function Project({tecnologies, mainImg, leftImg, title, liveCode, sourceCode, description, $btnColor }) {
   return (
     <Container>
     <Wide>
@@ -141,7 +139,10 @@ export default function Titles({tecnologies, mainImg, leftImg, title, liveCode, 
     <BottomContainer>
       <Divleft><img src={leftImg} alt=''/></Divleft>
       <DivRight><h1>{title}</h1>
+      <div>
+        <p><span>Description:</span>{description}</p>
         <p><span>Tecnologies used:</span>{tecnologies}</p>
+      </div>
       </DivRight>
     </BottomContainer>
 

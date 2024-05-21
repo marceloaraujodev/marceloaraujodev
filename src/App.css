@@ -168,7 +168,7 @@ main {
   flex-direction: column;
   align-items: center;
   width: 100%;
-  padding-top: 3rem;
+  margin-top: 100px;
 }
 .name {
   font-size: 4rem;
@@ -195,9 +195,10 @@ main {
 }
 .about {
   width: 80%;
-  margin-top: 80px;
-  font-size: 1.5rem;
+  margin-top: 100px;
+  font-size: 1rem;
   font-weight: 500;
+  /* background-color: rgb(240, 240, 240); */
 }
 .about-title {
   font-size: 2.5rem;
@@ -399,7 +400,7 @@ footer {
   background-color: rgb(255, 255, 255);
   width: 100%;
   padding-bottom: 20px;
-  margin-top: auto;
+  /* margin-top: auto; */
 }
 .footer-title {
   font-size: 1.5rem;
@@ -443,7 +444,7 @@ footer {
   }
 }
 
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
   section {
     padding-bottom: 20px;
   }
@@ -520,10 +521,10 @@ footer {
   .resume {
     margin-bottom: 100px;
   }
-}
+} */
 @media (max-width: 600px) {
   .nav_item {
-    padding: 20px;
+    padding: 10px;
   }
   section {
     padding-bottom: 20px;
@@ -590,13 +591,20 @@ footer {
     margin-top: 100px;
   }
   .about {
-    width: 80%;
+    width: 100%;
+  }
+  .about p{
+    font-size: 0.9rem;
+    font-weight: 400;
+    padding: 0 15px;
   }
   .about-img-container {
     display: flex;
     justify-content: center;
     flex-direction: column;
   }
+
+
 
   .resume {
     margin-bottom: 100px;

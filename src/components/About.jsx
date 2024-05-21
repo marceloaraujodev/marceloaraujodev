@@ -2,6 +2,67 @@ import { useState } from 'react';
 import Modal from './Modal';
 import Resume from './Resume';
 import { useInView } from 'react-intersection-observer';
+import TechCards from './TechCards';
+import styled from 'styled-components';
+
+const CardSkillsContainer = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 80%;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  @media screen and (max-width: 768px){
+    width: 100%;
+    /* margin: 0; */
+    max-width: 100%;
+  }
+`;
+
+const SkillsListContainer = styled.div`
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+
+  li{
+    font-size: 0.9rem;
+    font-weight: 400;
+  }
+  @media screen and (max-width: 768px){
+    flex-wrap: wrap;
+    gap: 5px;
+  }
+`;
+
+const SoftSkills = styled.div`
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+  border: 2px solid rgb(215, 215, 215);
+  padding: 30px;
+  border-radius: 5px;
+  width: 40%;
+  background-color: rgb(250, 250, 250);
+  @media screen and (max-width: 768px){
+    width: 100%;
+  }
+  `;
+
+const Courses = styled.div`
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+  border: 2px solid rgb(215, 215, 215);
+  padding: 30px;
+  border-radius: 5px;
+  width: 60%;
+  background-color: rgb(250, 250, 250);
+  @media screen and (max-width: 768px){
+    width: 100%;
+  }
+`;
+
+const Title = styled.div`
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin: 10px 0;
+`;
 
 export default function About() {
   const [modalOpen, setModalOpen] = useState(false);
@@ -29,18 +90,39 @@ export default function About() {
 
   return (
     <>
-     
-      <div className={`about-container ${inView ? 'animated ' : ''}`} ref={ref} id='about'>
-      <div className={`about-title`} >About Me</div>
-      <section className={`about `} >
-
-
-              {/* <p className='about-text'>Born in Brazil, <span className='about-bold'>lived in Los Angeles for 14 years.</span> Currently living between Miami and Brazil. 
+      <div
+        className={`about-container ${inView ? 'animated ' : ''}`}
+        ref={ref}
+        id="about">
+        <div className={`about-title`}>About Me</div>
+        <section className={`about `}>
+          {/* <p className='about-text'>Born in Brazil, <span className='about-bold'>lived in Los Angeles for 14 years.</span> Currently living between Miami and Brazil. 
         </p>
         <p className='about-text'><span className='about-bold'>Full-Stack Software Engineer</span>. Former online Entrepreneur, Fashion photographer and professional Surfer. Happy with my new career in coding.</p> */}
 
-        <p>
-        Hi, thanks for your interest in my portfolio. I&apos;ve had a few different careers over the years. I&apos;m a former professional surfer, I competed in the World Qualifying Series from 2001 until 2007.
+          <p>
+            Welcome to my portfolio. I am a full stack developer with extensive
+            experience in front and backend development, utilizing technologies
+            such as React, MongoDB, Next.js, Styled Components, JavaScript, AWS,
+            Firebase, Figma, and REST APIs.
+            <br></br>
+            <br></br>I am adept at designing and implementing robust, scalable
+            solutions that drive business success.
+            <br></br>
+            <br></br>I am particularly skilled in React and Next.js for building
+            dynamic, responsive user interfaces, and I have a strong command of
+            backend technologies like MongoDB and AWS to ensure secure and
+            efficient data management. My expertise in Styled Components and
+            JavaScript allows me to create visually appealing and
+            high-performance applications.
+            <br></br>
+            <br></br>I am seeking a full stack developer role where I can apply
+            my technical skills and innovative mindset to solve complex problems
+            and contribute to a forward-thinking team. I am committed to
+            delivering high-quality work that exceeds expectations. Thank you
+            for considering my portfolio. I look forward to the opportunity to
+            bring my skills and dedication to your organization.
+            {/* Hi, thanks for your interest in my portfolio. I&apos;ve had a few different careers over the years. I&apos;m a former professional surfer, I competed in the World Qualifying Series from 2001 until 2007.
           <br></br>
           <br></br>
           In 2008 I started working with WaveDataSystems using their beach bytes software,
@@ -65,41 +147,69 @@ export default function About() {
           tips on how to fix my code and he would always send me links of the
           documentation. It was a lot of fun and sleepless nights. I&apos;m
           looking for a full stack developer job. I&apos;m very focus, driven
-          and have a strong mindset to get things done and problems solved.
-          <br></br>
-          <br></br>
-          Courses and Skills:
-          <br></br>
-          <br></br>
-        </p>
-        <ul>
+          and have a strong mindset to get things done and problems solved. */}
+            <br></br>
+            <br></br>
+            <Title>
+              Hard Skills:
+            </Title>
+            <CardSkillsContainer>
+              <TechCards img="/jslogo.png" techName="JavaScript" />
+              <TechCards img="/react-logo.png" techName="React" />
+              <TechCards img="/nodejslogo.png" techName="Node.js" />
+              <TechCards img="/mongodblogo.png" techName="MongoDB" />
+              <TechCards img="/csslogo.png" techName="css" />
+              <TechCards img="/bootstraplogo.png" techName="bootstrap" />
+            </CardSkillsContainer>
+            <br></br>
+            <br></br>
+          </p>
+
+          <SkillsListContainer>
+          <SoftSkills>
+          <Title>
+            Soft Skills:
+          </Title>
+          <ul>
+          <li>Leadership</li>
+            <li>Communication</li>
+            <li>Adaptability </li>
+            <li>Time Management</li>
+            <li>Customer Service</li>
+          </ul>
+          </SoftSkills>
+          <br />
+          <Courses>
+          <Title>
+            Courses:
+          </Title>
+          <ul>
             <li>
-              The Complete JavaScript Course:<br></br>From Zero to Expert 68.5
-              hours by Jonas Schmedtmann
+              The Complete JavaScript Course From Zero to Expert by Jonas Schmedtmann
             </li>
             <li>
-              React - The Complete Guide 2024 Video:<br></br> 68.5 by Maximilian
-              Schwarzmüller
+              React - The Complete Guide 2024 by Maximilian Schwarzmüller
             </li>
             <li>
-              Node.js, Express, MongoDB & More The Complete Bootcamp 2024:
-              <br></br> 42 hours by Jonas Schmedtmann
+              Node.js, Express, MongoDB & More The Complete Bootcamp 2024s by Jonas Schmedtmann
             </li>
             <li>
-              The Complete 2024 Web Development Bootcamp:<br></br> 62 hours by
-              Dr. Angela Yu
+              The Complete 2024 Web Development Bootcamp by Dr. Angela Yu
             </li>
             <li>Zero to Mastery - Complete Web Developer</li>
-            <li>Photoshop</li>
-            <li>Adobe Lightroom</li>
-            <li>Adobe Premiere</li>
+
           </ul>
-      </section>
+
+          </Courses>
+
+
+          </SkillsListContainer>
+
+        </section>
       </div>
       <div
         className={`about-img-container ${imgView ? 'animated2' : ''}`}
-        ref={imgRef}
-      >
+        ref={imgRef}>
         <img
           src="/selfie.jpg"
           alt="portrait in the mirror"
