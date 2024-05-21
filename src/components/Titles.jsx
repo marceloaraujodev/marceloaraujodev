@@ -10,11 +10,13 @@ const Container = styled.div`
   align-items: center;
   gap: 20px;
   margin-bottom: 100px;
-`;
+  `;
 const Wide = styled.div`
   width: 92%;
   position: relative;
+  
   img{
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
     object-fit: cover;
     width: 100%;
     border-radius: 15px;
@@ -50,7 +52,7 @@ const Btn = styled.button`
     color: black;
     border: 2px solid black;
   `}
- 
+
   & a {
   text-decoration: none;
   color: black;
@@ -86,6 +88,7 @@ const Divleft = styled.div`
     width: 100%;
     object-fit: cover;
     border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   }
   @media screen and (max-width: 768px){
     width: 100%;
@@ -102,6 +105,7 @@ const Divleft = styled.div`
     padding: 0 20px;
     gap: 15px;
     background-color: #e8e8e8;
+    box-shadow: 5px 0 8px rgba(0, 0, 0, 0.1);
 
     h1{
       font-weight: 600;
