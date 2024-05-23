@@ -18,7 +18,7 @@ export default function Projects() {
           mainImg="/ecomm.jpg"
           leftImg="/ecomH1.jpg"
           title="WebStore"
-          description="Full Ecommerce website, basically 2 projects one as the frontend and one as the dashboard for admins. Lets you create and control new items, categories, check orders status (paid or not). 2 different databases for the frontend and the dashboard giving greate control of newsletter emails, clients orders which are displayed in the frontend, backend orders, oauth logins with google, AWS and more." 
+          description="Full Ecommerce website, basically 2 projects one as the frontend and one as the dashboard for admins. Lets you create and control new items, categories, check orders status (paid or not). 2 different databases for the frontend and the dashboard giving greater control of newsletter emails, clients orders which are displayed in the frontend, backend orders, oauth logins with google, AWS and more." 
           liveCode="https://next-js-ecommerce-n5i9.vercel.app/"
           sourceCode="https://github.com/marceloaraujodev/NextJsEcommerce"
           tecnologies="Next.js, React, Styled Components, Axios, AWS, MongoDb, NextAuth, Bootstrap and Stripe for payments."
