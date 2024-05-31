@@ -42,7 +42,7 @@ const Btn = styled.button`
   color: white;
   border-radius: 5px;
   padding: 10px 15px;
-  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 5px 5px 6px rgba(0, 0, 0, 0.2);
   transition: transform 1s ease;
 
   ${props => props.$btnColor && css`
@@ -87,7 +87,7 @@ const Divleft = styled.div`
     max-height: 600px;
     object-fit: contain;
     border-radius: 15px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.3);
   }
   @media screen and (max-width: 768px){
     width: 100%;
@@ -104,7 +104,7 @@ const Divleft = styled.div`
     padding: 0 20px;
     gap: 15px;
     background-color: #e8e8e8;
-    /* box-shadow: 3px 2px 3px rgba(0, 0, 0, 0.1); */
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.1);
     text-align: left;
 
     h1{

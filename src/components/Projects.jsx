@@ -23,6 +23,16 @@ export default function Projects() {
           sourceCode="https://github.com/marceloaraujodev/NextJsEcommerce"
           tecnologies="Next.js, React, Styled Components, Axios, AWS, MongoDb, NextAuth, Bootstrap and Stripe for payments."
         />
+    <Project
+          mainImg="/userview.png"
+          leftImg="/mybankregister.png"
+          title="myBank"
+          description="I developed a robust mock banking app featuring account management, transfers, loans, balances, and sortable transactions. Key security measures include bcrypt for password encryption, ensuring passwords are stored securely and remain inaccessible to admins. The app employs httpOnly cookies to store JSON Web Tokens for secure user verification during login and transactions. A session timer logs users out and clears cookies after 5 minutes of inactivity. Comprehensive CRUD operations—such as account creation, deletion, money transfers, and loan requests—are seamlessly managed and stored in MongoDB Atlas." 
+          liveCode="https://mybank-client.onrender.com/"
+          sourceCode="https://github.com/marceloaraujodev/myBank"
+          tecnologies="React, Axios, MongoDb, Node.js, Json web token, mongoose, bcrypt"
+          $btnColor="$black"
+        />
         <Project
           mainImg="/aphrodite.jpg"
           leftImg="/aphrodite-gallery.jpg"
