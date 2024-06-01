@@ -130,19 +130,21 @@ const Divleft = styled.div`
 
 const DescriptionContainer = styled.div`
   overflow-y: auto;
-  height: 425px;
+  height: 295px;
   scrollbar-color: rgb(75, 75, 75) rgb(214, 214, 214) !important;
   scrollbar-width: thin !important;
-  border: 2px solid green;
   
   p{
     font-size: .8rem;
     margin-top: 10px;
   }
-  @media screen and (min-width: 992px){
-    height: 325px;
+  @media screen and (max-width: 1399px){
+    height: 245px;
   }
-  @media screen and (min-width: 768px){
+  @media screen and (max-width: 1200px){
+    height: 205px;
+  }
+  @media screen and (max-width: 992px){
     height: 125px;
   }
 
