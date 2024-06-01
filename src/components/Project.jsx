@@ -2,6 +2,7 @@ import styled, {css} from 'styled-components';
 import { motion } from 'framer-motion';
 import useIntersectionObserver from './useIntersectionObserver';
 
+
 const Container = styled.div`
   width: 100%;
   display: flex;
@@ -135,9 +136,15 @@ const Divleft = styled(motion.div)`
 const DescriptionContainer = styled.div`
   overflow-y: auto;
   height: 295px;
-  scrollbar-color: rgb(75, 75, 75) rgb(214, 214, 214) !important;
-  scrollbar-width: thin !important;
+  scrollbar-color: rgb(75, 75, 75) rgb(214, 214, 214);
+  scrollbar-width: thin;
   
+  /* &::-webkit-scrollbar{
+    width: 5px;
+    height: 8px;
+    background-color: #aaa; 
+  } */
+
   p{
     font-size: .8rem;
     margin-top: 10px;
