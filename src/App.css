@@ -445,94 +445,12 @@ footer {
   }
 }
 
-/* @media (max-width: 768px) {
-  section {
-    padding-bottom: 20px;
-  }
-  main {
-    margin: 0;
-    padding: 0;
-  }
-  .home {
-    width: 100%;
-    height: 300px;
-    margin-bottom: 50px;
-  }
-
-  .name {
-    font-size: 2rem;
-    top: 100px;
-    left: 25px;
-  }
-  .title {
-    font-size: 2rem;
-    top: 150px;
-    left: 25px;
-  }
-  .social {
-    top: 210px;
-    left: 25px;
-  }
-  .social-media {
-    padding-right: 20px;
-    font-size: 0.8rem;
-    padding-left: 5px;
-  }
-  .photo{
-    display: none;
-  }
-  .projects {
-    margin-top: 60px;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 50px;
-  }
-  .projects-item-title {
-    text-align: center;
-  }
-  .project-image-container {
-    display: flex;
-    justify-content: center;
-  }
-  .projects-images {
-    width: 100%;
-    object-fit: cover;
-  }
-  .projects-info {
-    width: 80%;
-  }
-  .projects-description {
-    font-size: 0.7rem;
-    line-height: 1rem;
-  }
-  .about-container {
-    margin-top: 100px;
-  }
-  .about {
-    width: 80%;
-  }
-  .about-img-container {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-  }
-
-  .resume {
-    margin-bottom: 100px;
-  }
-} */
 @media (max-width: 600px) {
   .nav_item {
     padding: 10px;
   }
   section {
     padding-bottom: 20px;
-  }
-  main {
-    /* margin: 0;
-    padding: 0; */
   }
   .home {
     width: 100%;
