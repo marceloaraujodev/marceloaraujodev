@@ -72,6 +72,7 @@ const BottomContainer = styled.div`
   justify-content: space-between;
   gap: 10px;
   width: 92%;
+  overflow: hidden;
   
   @media screen and (max-width: 768px){
     flex-wrap: wrap;
@@ -80,11 +81,12 @@ const BottomContainer = styled.div`
   `;
 const Divleft = styled.div`
   width: 60%;
+
   /* border: 1px solid red; */
   img{
     width: 100%;
     /* height: 600px; */
-    max-height: 600px;
+    max-height: 100%;
     object-fit: contain;
     border-radius: 15px;
     box-shadow: 0 0 2px rgba(0, 0, 0, 0.3);
@@ -100,18 +102,20 @@ const Divleft = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    padding: 0 20px;
+    padding: 20px 20px;
     gap: 15px;
     background-color: #e8e8e8;
     box-shadow: 0 0 2px rgba(0, 0, 0, 0.1);
     text-align: left;
+  
 
     h1{
       font-weight: 600;
+      margin-top: 10px;
       @media screen and (max-width: 768px){
         margin-top: 15px;
     }
+    
     }
 
   span{
@@ -122,8 +126,33 @@ const Divleft = styled.div`
   @media screen and (max-width: 768px){
     width: 100%;
   }
-
 `;
+
+const DescriptionContainer = styled.div`
+  overflow-y: auto;
+  height: 425px;
+  scrollbar-color: rgb(75, 75, 75) rgb(214, 214, 214) !important;
+  scrollbar-width: thin !important;
+  border: 2px solid green;
+  
+  p{
+    font-size: .8rem;
+    margin-top: 10px;
+  }
+  @media screen and (min-width: 992px){
+    height: 325px;
+  }
+  @media screen and (min-width: 768px){
+    height: 125px;
+  }
+
+  `;
+
+// const ScrollableDescription = styled.div`
+//   /* overflow-y: auto;
+//   max-height: 180px; */
+//   font-size: .8rem;
+// `;
 
 
 export default function Project({tecnologies, mainImg, leftImg, title, liveCode, sourceCode, description, $btnColor }) {
@@ -139,10 +168,10 @@ export default function Project({tecnologies, mainImg, leftImg, title, liveCode,
     <BottomContainer>
       <Divleft><img src={leftImg} alt=''/></Divleft>
       <DivRight><h1>{title}</h1>
-      <div>
+      <DescriptionContainer>
         <p><span>Description:</span>{description}</p>
         <p><span>Tecnologies used:</span>{tecnologies}</p>
-      </div>
+      </DescriptionContainer>
       </DivRight>
     </BottomContainer>
 
