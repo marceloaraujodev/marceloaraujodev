@@ -1,4 +1,6 @@
 import styled, {css} from 'styled-components';
+import { motion } from 'framer-motion';
+import useIntersectionObserver from './useIntersectionObserver';
 
 const Container = styled.div`
   width: 100%;
@@ -8,7 +10,9 @@ const Container = styled.div`
   gap: 20px;
   margin-bottom: 130px;
   `;
-const Wide = styled.div`
+
+  // main image
+const Wide = styled(motion.div)`
   width: 92%;
   position: relative;
   
@@ -79,7 +83,7 @@ const BottomContainer = styled.div`
   }
   
   `;
-const Divleft = styled.div`
+const Divleft = styled(motion.div)`
   width: 60%;
 
   /* border: 1px solid red; */
@@ -96,7 +100,7 @@ const Divleft = styled.div`
   }
   `;
 
-  const DivRight = styled.div`
+  const DivRight = styled(motion.div)`
     border-radius: 15px;
     width: 40%;
     display: flex;
@@ -158,9 +162,24 @@ const DescriptionContainer = styled.div`
 
 
 export default function Project({tecnologies, mainImg, leftImg, title, liveCode, sourceCode, description, $btnColor }) {
+
+    const { 
+      divWidetRef,
+      inViewDivWide,
+      divLeftRef,
+      inViewDivLeft,
+      divRightRef,
+      inViewDivRight,
+    
+    } = useIntersectionObserver();
+
   return (
     <Container>
-    <Wide>
+    <Wide ref={divWidetRef}
+      initial={{ opacity: 0, scale: 0.8 }}
+      animate={inViewDivWide ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 0.8 }}
+      transition={{ duration: 0.5 }}
+    >
       <img src={mainImg} alt='' />
       <ButtonContainer>
         <a href={liveCode} target='blank'><Btn $btnColor={$btnColor} id='btnMainImg'>Live Code</Btn></a>
@@ -168,8 +187,16 @@ export default function Project({tecnologies, mainImg, leftImg, title, liveCode,
       </ButtonContainer>
     </Wide>
     <BottomContainer>
-      <Divleft><img src={leftImg} alt=''/></Divleft>
-      <DivRight><h1>{title}</h1>
+      <Divleft ref={divLeftRef}
+        initial={{ opacity: 0, scale: 0.8 }}
+        animate={inViewDivLeft ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 0.8 }}
+        transition={{ duration: 0.5 }}
+      ><img src={leftImg} alt=''/></Divleft>
+      <DivRight ref={divRightRef}
+        initial={{ opacity: 0, scale: 0.8 }}
+        animate={inViewDivRight ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 0.8 }}
+        transition={{ duration: 0.5 }}
+      ><h1>{title}</h1>
       <DescriptionContainer>
         <p><span>Description:</span>{description}</p>
         <p><span>Tecnologies used:</span>{tecnologies}</p>

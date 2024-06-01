@@ -5,15 +5,20 @@ import styled from 'styled-components';
 const Title = styled.h1`
   text-align: center;
   margin-bottom: 50px;
-  /* margin-top: 100px; */
   font-weight: 600;
+  /* margin-top: 100px; */
+  
+  @media screen and (max-width: 768px){
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+  }
 `;
 
 export default function Projects() {
   return (
     <>
 
-<Title>PROJECTS</Title>
+  <Title>PROJECTS</Title>
     <Project
           mainImg="/ecomm.jpg"
           leftImg="/ecomH1.jpg"
