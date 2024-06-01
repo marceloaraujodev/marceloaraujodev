@@ -1,8 +1,9 @@
 import React from 'react'
 import Project from './Project'
 import styled from 'styled-components';
+import { motion } from 'framer-motion';
 
-const Title = styled.h1`
+const Title = styled(motion.h1)`
   text-align: center;
   margin-bottom: 50px;
   font-weight: 600;
@@ -18,7 +19,11 @@ export default function Projects() {
   return (
     <>
 
-  <Title>PROJECTS</Title>
+  <Title
+      initial={{ opacity: 0, scale: 0.8 }}
+      animate={{ opacity: 1, scale: 1 }}
+      transition={{ duration: 0.5 }}
+  >PROJECTS</Title>
     <Project
           mainImg="/ecomm.jpg"
           leftImg="/ecomH1.jpg"
