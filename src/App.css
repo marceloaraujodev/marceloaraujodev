@@ -258,7 +258,8 @@ main {
   opacity: 0;
 }
 .resume {
-  margin-bottom: 200px;
+  margin-top: 0;
+  margin-bottom: 50px;
 }
 .title {
   font-size: 4rem;
