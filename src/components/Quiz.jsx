@@ -2,6 +2,7 @@ import { useState } from 'react';
 import styled, { css } from 'styled-components';
 import { motion } from 'framer-motion';
 import axios from 'axios';
+import Button from './Button';
 
 const Container = styled.div`
   width: 92%;
@@ -27,6 +28,11 @@ const Wide = styled(motion.div)`
     margin-top: 30px;
     font-weight: 600;
   }
+  /* button{
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  } */
 
   button {
     display: block;
@@ -146,7 +152,7 @@ export default function Quiz() {
     setIsSubmitted(true);
     setTimeout(() => setClearThankyou(true), 5000);
 
-    const res = await axios.post('http://localhost:4000/visitors', { userJob });
+    const res = await axios.post('https://marceloaraujodev-backend.onrender.com/visitors', { userJob });
     console.log(res.data);
   }
 
@@ -181,6 +187,7 @@ export default function Quiz() {
                 </LabelWrapper>
               </QuizFormContainer>
               <button onClick={handleSubmit}>Submit</button>
+              {/* <Button text={'Submit'} /> */}
             </form>
           </Wide>
         </Container>
