@@ -11,14 +11,13 @@ const Container = styled.div`
   gap: 20px;
   margin-bottom: 130px;
   `;
-
   // main image
 const Wide = styled(motion.div)`
   width: 92%;
   position: relative;
   
   img{
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     object-fit: cover;
     width: 100%;
     border-radius: 15px;
@@ -77,7 +76,7 @@ const BottomContainer = styled.div`
   justify-content: space-between;
   gap: 10px;
   width: 92%;
-  overflow: hidden;
+  /* overflow: hidden; */
   
   @media screen and (max-width: 768px){
     flex-wrap: wrap;
@@ -136,8 +135,10 @@ const Divleft = styled(motion.div)`
 const DescriptionContainer = styled.div`
   overflow-y: auto;
   height: 295px;
+  max-height: 100%;
   scrollbar-color: rgb(75, 75, 75) rgb(214, 214, 214);
   scrollbar-width: thin;
+  /* background-color: blue; */
   
   /* &::-webkit-scrollbar{
     width: 5px;

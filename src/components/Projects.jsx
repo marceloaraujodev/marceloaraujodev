@@ -57,7 +57,7 @@ export default function Projects() {
           mainImg="/echo.jpg"
           leftImg="/echo2.jpg"
           title="Echo Figma Design to Code"
-          description="Transformed a Figma design into UIs using React.js, Bootstrap, and Vite."
+          description="I converted a Figma design into responsive UIs using React.js, Bootstrap, and Vite. Through meticulous attention to detail, I ensured the faithful translation of the design into code, maintaining consistency and optimal user experience across devices. Leveraging React.js for modular components, Bootstrap for design consistency, and Vite for efficient development, I delivered a seamless convergence of design and functionality. The result is a user-friendly website that mirrors the original design's aesthetic appeal while offering a dynamic and responsive user experience."
           liveCode="https://figmatocodeecho.onrender.com"
           sourceCode="https://github.com/marceloaraujodev/Portfolio-Projects/tree/master/FigmaToCode/EcoDental"
           tecnologies="React, Vite, Javascript, CSS, HTML, Figma"

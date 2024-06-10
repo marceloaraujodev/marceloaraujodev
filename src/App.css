@@ -62,7 +62,7 @@ body {
   flex-direction: column;
   min-height: 100vh;
 }
-
+/* 
 .overlay {
   position: fixed;
   top: 0;
@@ -80,10 +80,10 @@ dialog {
   width: 80%;
   max-height: 90%;
   max-width: 700px;
-  /* overflow: auto; */
   background-color: white;
   padding: 20px;
   z-index: 1000;
+  border-radius: 5px;
 }
 .modal-content {
   position: relative;
@@ -98,6 +98,26 @@ dialog {
   color: rgb(0, 0, 0);
   font-weight: bold;
 }
+.modal-form{
+  display: flex;
+  align-items: self-start;
+  flex-direction: column;
+}
+.modal-form-input-container{
+  display: flex;
+  flex-direction: column;
+}
+.modal-form input{
+  margin-bottom: 10px;
+}
+.modal-form button{
+  margin-top: 10px;
+  padding: 5px 15px;
+  border-radius: 5px;
+  border: 1px solid gray;
+  margin: 0 auto;
+} */
+
 .header {
   width: 100%;
   display: flex;
