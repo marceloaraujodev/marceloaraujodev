@@ -90,7 +90,7 @@ const LabelWrapper = styled.label`
     transition: all .4s ease;
   }
 
-  /* On mouse-over, add a grey background color */
+ /* On mouse-over, add a grey background color */
   &:hover input ~ span {
     background-color: #aaa;
   }
@@ -121,7 +121,7 @@ const LabelWrapper = styled.label`
     border: solid white;
     border-width: 0 3px 3px 0;
     transform: rotate(45deg);
-  }
+  } 
 `;
 
 const CheckMark = styled.span`
