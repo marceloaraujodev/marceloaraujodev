@@ -73,9 +73,7 @@ export default function Projects() {
         leftImg="/woovi-secondary.jpg"
         title="Woovi"
         description="
-          This project was a Frontend Engineer Challenge from a brazillian fin tech. The challange was to create these designs from a figma file. The design 
-          that were a replica of their working design.
-          here is a link for the challenge: https://woovi.com/jobs/challenges/frontend-engineer/
+          This project involved a Frontend Engineer Challenge for a Brazilian fintech company. The objective was to accurately recreate a series of designs provided in a Figma file. These designs were replicas of the company's existing working designs. The challenge tested my skills in converting visual design into functional frontend code, ensuring pixel-perfect accuracy and responsiveness. Here is a link for the challenge specs: https://woovi.com/jobs/challenges/frontend-engineer/
           "
         liveCode="https://woovi.onrender.com/"
         sourceCode="https://github.com/marceloaraujodev/woovi"
