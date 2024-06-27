@@ -10,9 +10,13 @@ const Container = styled.div`
   align-items: center;
   gap: 20px;
   margin-bottom: 130px;
+
+  @media screen and (max-width: 768px){
+    margin-bottom: 80px;
+  }
   `;
   // main image
-const Wide = styled(motion.div)`
+  const Wide = styled(motion.div)`
   width: 92%;
   position: relative;
   
@@ -20,7 +24,7 @@ const Wide = styled(motion.div)`
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     object-fit: cover;
     width: 100%;
-    border-radius: 15px;
+    border-radius: 5px;
   }
   `;
 
@@ -92,7 +96,7 @@ const Divleft = styled(motion.div)`
     /* height: 600px; */
     max-height: 100%;
     object-fit: contain;
-    border-radius: 15px;
+    border-radius: 5px;
     box-shadow: 0 0 2px rgba(0, 0, 0, 0.3);
   }
   @media screen and (max-width: 768px){
@@ -101,7 +105,7 @@ const Divleft = styled(motion.div)`
   `;
 
   const DivRight = styled(motion.div)`
-    border-radius: 15px;
+    border-radius: 5px;
     width: 40%;
     display: flex;
     flex-direction: column;
