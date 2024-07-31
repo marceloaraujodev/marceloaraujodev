@@ -29,7 +29,7 @@ export default function Resume() {
 
       <div className={`resume-container ${inView ? 'animated2 ' : ''} `} id='resume' ref={ref}>
       <div className={`resume `} >
-      <Button text={'Resume'} href='https://drive.google.com/file/d/1wBcP-MWsWjnDz7hRzmJyD97mStEcIuQd/view?usp=sharing' />
+      <Button text={'Resume'} href='https://drive.google.com/file/d/1w4CQVlnjSluqAb4J2hFgnWP-QTYsUAFz/view?usp=sharing' />
       </div>
       </div>
     </Container>

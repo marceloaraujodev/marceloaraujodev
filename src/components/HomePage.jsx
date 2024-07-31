@@ -12,15 +12,6 @@ export default function HomePage() {
     <>
       <Container>
        <Projects />
-
-        {/* <CharterBoats /> */}
-        {/* <FigmaToCode /> */}
-        {/* <BlogProject /> */}
-        {/* <FigmaToCode2 /> */}
-        {/* <ShopCartProject /> */}
-        {/* <ConceptColchoes /> */}
-        {/* <FipeProject /> */}
-        {/* <About /> */}
       </Container>
     </>
   );
