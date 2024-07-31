@@ -111,6 +111,16 @@ export default function Projects() {
         tecnologies="React, Javascript, Nodejs, MongoDB, CSS, HTML, Bootstrap, Json Web Token, bcrypt, stripe"
         $btnColor="$black"
       />
+      <Project
+        mainImg="/shop-cart-page.jpg"
+        leftImg="/shop-cart-page-modal.jpg"
+        title="It Blog"
+        description="This product page interface includes comprehensive cart functionality, featuring a modal with a photo gallery and thumbnail images. The cart total is dynamically updated as new items are added, and the number of items in the cart is prominently displayed above the cart icon, serving as a visual reminder for users. Additionally, the interface showcases detailed price descriptions, including promotional tags, original prices, and discounted prices, effectively creating a sense of urgency to encourage purchases."
+        liveCode="https://shopcartpage.onrender.com/"
+        sourceCode="https://github.com/marceloaraujodev/shopCartPage"
+        tecnologies="Javascript, HTML, CSS"
+        $btnColor="$black"
+      />
     </>
   );
 }
