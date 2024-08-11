@@ -7,6 +7,7 @@ import Projects from './components/Projects';
 import Quiz from './components/Quiz';
 
 function App() {
+
   return (
     <>
       {/* <Modal /> */}

@@ -49,6 +49,18 @@ export default function Projects() {
         PROJECTS
       </Title>
       </Container>
+
+      <Project
+        mainImg="/aphroditeMain.png"
+        leftImg="/aphrodite-gallery.jpg"
+        title="Yacht Charter"
+        description="Miami based Yacht Charter firm. Designed using Next.js, this project aims to deliver a seamless and efficient experience for clients, administrators and staff. Service Log Management, database will meticulously track service logs and maintenance records for the boat. Comprehensive Admin Panel: The backend features an intuitive admin panel to manage employee information and service details effectively."
+        liveCode="https://charter-ebon.vercel.app/"
+        sourceCode="https://github.com/marceloaraujodev/charter"
+        tecnologies="React, Javascript, Next.js, MongoDB, CSS, HTML, API, Node.js"
+        $btnColor="$black"
+      />
+
       <Project
         mainImg="/ecomm.jpg"
         leftImg="/ecomH1.jpg"
@@ -80,17 +92,7 @@ export default function Projects() {
         tecnologies="React, Figma, Styled Components, React Router Dom"
         $btnColor="$black"
       />
-      <Project
-        mainImg="/aphrodite.jpg"
-        leftImg="/aphrodite-gallery.jpg"
-        title="Yacht Charter"
-        description="Miami based Yacht Charter firm. Designed using Next.js, this project is still in development and aims to deliver a seamless and efficient experience clients, administrators and staff. Service Log Management, database will meticulously track service logs and maintenance records for the boat.
-        Comprehensive Admin Panel: The backend will feature an intuitive admin panel to manage employee information and service details effectively."
-        liveCode="https://charter-ebon.vercel.app/"
-        sourceCode="https://github.com/marceloaraujodev/charter"
-        tecnologies="React, Javascript, Nextjs, MongoDB, CSS, HTML"
-        $btnColor="$black"
-      />
+
       <Project
         mainImg="/echo.jpg"
         leftImg="/echo2.jpg"
@@ -101,6 +103,7 @@ export default function Projects() {
         tecnologies="React, Vite, Javascript, CSS, HTML, Figma"
         $btnColor="$black"
       />
+
       <Project
         mainImg="/blog1.jpg"
         leftImg="/blog4.jpg"
