@@ -209,10 +209,7 @@ export default function Project({tecnologies, mainImg, leftImg, title, liveCode,
         animate={inViewDivRight ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 0.8 }}
         transition={{ duration: 0.5 }}
       ><h1>{title}</h1>
-      <DescriptionContainer>
-        <p><span>Description:</span>{description}</p>
-        <p><span>Tecnologies used:</span>{tecnologies}</p>
-      </DescriptionContainer>
+      <DescriptionContainer dangerouslySetInnerHTML={{ __html: description }}/>
       </DivRight>
     </BottomContainer>
 
