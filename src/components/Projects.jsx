@@ -118,7 +118,7 @@ export default function Projects() {
       <Project
         mainImg="/shop-cart-page.jpg"
         leftImg="/shop-cart-page-modal.jpg"
-        title="Product Cart Page"
+        title="Product Page"
         description="This product page interface includes comprehensive cart functionality, featuring a modal with a photo gallery and thumbnail images. The cart total is dynamically updated as new items are added, and the number of items in the cart is prominently displayed above the cart icon, serving as a visual reminder for users. Additionally, the interface showcases detailed price descriptions, including promotional tags, original prices, and discounted prices, effectively creating a sense of urgency to encourage purchases."
         liveCode="https://shopcartpage.onrender.com/"
         sourceCode="https://github.com/marceloaraujodev/shopCartPage"
