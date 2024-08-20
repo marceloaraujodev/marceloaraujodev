@@ -20,15 +20,15 @@ const Title = styled(motion.div)`
   margin-bottom: 50px;
   /* border: 2px solid green; */
 
- &::after{
-  content: '';
-  position: absolute;
-  bottom: -1px;
-  height: 2px;
-  left: 10%;
-  width: 80%;
-  background-color: black;
- }
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: -1px;
+    height: 2px;
+    left: 10%;
+    width: 80%;
+    background-color: black;
+  }
 
   @media screen and (max-width: 768px) {
     font-size: 1.8rem;
@@ -39,15 +39,15 @@ const Title = styled(motion.div)`
 export default function Projects() {
   return (
     <>
-    <Container>
-      <Title
-        initial={{ opacity: 0, scale: 0.8 }}
-        animate={{ opacity: 1, scale: 1 }}
-        transition={{ duration: 0.5 }}
-        // className='project-title'
-      >
-        PROJECTS
-      </Title>
+      <Container>
+        <Title
+          initial={{ opacity: 0, scale: 0.8 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.5 }}
+          // className='project-title'
+        >
+          PROJECTS
+        </Title>
       </Container>
 
       <Project
@@ -65,7 +65,8 @@ export default function Projects() {
         mainImg="/ecomm.jpg"
         leftImg="/ecomH1.jpg"
         title="WebStore"
-        description="Full Ecommerce website, basically 2 projects one as the frontend and one as the dashboard for admins. Lets you create and control new items, categories, check orders status (paid or not). 2 different databases for the frontend and the dashboard giving greater control of newsletter emails, clients orders which are displayed in the frontend, backend orders, oauth logins with google, AWS and more."
+        description="Comprehensive E-commerce Platform: This project consists of two integrated applications: a customer-facing storefront and an admin dashboard. The storefront allows users to browse and purchase products, with features like order tracking, secure payment processing, and OAuth login options (Google, AWS, and more). The admin dashboard provides robust tools for managing the entire e-commerce ecosystem, including creating and controlling product listings, organizing categories, and monitoring order statuses (paid or unpaid).
+        The system utilizes two distinct databases, ensuring optimal control and security. One database powers the frontend, managing customer orders and newsletter subscriptions, while the other is dedicated to backend operations, enabling detailed analytics and efficient handling of admin functions."
         liveCode="https://next-js-ecommerce-n5i9.vercel.app/"
         sourceCode="https://github.com/marceloaraujodev/NextJsEcommerce"
         tecnologies="Next.js, React, Styled Components, Axios, AWS, MongoDb, NextAuth, Bootstrap and Stripe for payments."
