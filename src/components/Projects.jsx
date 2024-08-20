@@ -105,7 +105,7 @@ export default function Projects() {
         $btnColor="$black"
       />
 
-      <Project
+      {/* <Project
         mainImg="/blog1.jpg"
         leftImg="/blog4.jpg"
         title="It Blog"
@@ -114,7 +114,7 @@ export default function Projects() {
         sourceCode="https://github.com/marceloaraujodev/Portfolio-Projects/tree/master/Blog"
         tecnologies="React, Javascript, Nodejs, MongoDB, CSS, HTML, Bootstrap, Json Web Token, bcrypt, stripe"
         $btnColor="$black"
-      />
+      /> */}
       <Project
         mainImg="/shop-cart-page.jpg"
         leftImg="/shop-cart-page-modal.jpg"
