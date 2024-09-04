@@ -63,7 +63,7 @@ export default function Projects() {
         
        <p><span>Tecnologies used:</span>React, Javascript, Next.js, MongoDB, CSS, HTML, API, Node.js</p>  
         `}
-        liveCode="https://charter-ebon.vercel.app/"
+        liveCode="https://www.aphroditecharters.com/"
         sourceCode="https://github.com/marceloaraujodev/charter"
         $btnColor="$black"
       />
