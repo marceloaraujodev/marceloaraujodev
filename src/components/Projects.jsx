@@ -69,6 +69,20 @@ export default function Projects() {
       />
 
       <Project
+        mainImg="/FMA-wide.png"
+        leftImg="/FMA-4.png"
+        title="Marketing Agency"
+        description={`This website is built using Next.js for fast performance and server-side rendering, ensuring a smooth user experience and SEO optimization. Framer Motion adds dynamic, interactive animations, enhancing user engagement<br /><br />
+
+        For seamless API communication, Axios is used, with Nodemailer handling secure email functionality. Real-time notifications are powered by React Toastify, and React Icons enhance the UI.<br /><br />
+
+        The stack is optimized for performance, interactivity, and scalability, ensuring a robust and responsive web application.
+        `}
+        liveCode="https://www.fashionmarketingagency.com.br/"
+        sourceCode="https://github.com/marceloaraujodev/fma.git"
+      />
+
+      <Project
         mainImg="/readerApp.png"
         leftImg="/readerApp2.png"
         title="Meter Reader"
