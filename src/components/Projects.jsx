@@ -86,7 +86,7 @@ export default function Projects() {
         mainImg="/readerApp.png"
         leftImg="/readerApp2.png"
         title="Meter Reader"
-        description={`I developed a Consumption Meter Reading App using TypeScript, React, and React Suite, designed to streamline utility meter readings. <br /><br/>
+        description={`AI Consumption Meter Reading App using TypeScript, React, Node and Google Vision AI, designed to streamline utility meter readings. <br /><br/>
           
           The app allows users to upload readings, select utility types, and attach files, with backend integration via Node.js, Express, and MongoDB. The uploaded data is sent to a custom API, which uses Google Vision AI to read meter information directly from images. <br /><br/>
           
