@@ -142,7 +142,7 @@ const DescriptionContainer = styled.div`
   max-height: 100%;
   scrollbar-color: rgb(75, 75, 75) rgb(214, 214, 214);
   scrollbar-width: thin;
-  word-break: break-all;
+  word-break: break-word;
   /* background-color: blue; */
   
   /* &::-webkit-scrollbar{
