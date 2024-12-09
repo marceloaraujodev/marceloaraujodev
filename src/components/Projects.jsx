@@ -60,8 +60,8 @@ export default function Projects() {
 
         The stack is optimized for performance, interactivity, and scalability, ensuring a robust and responsive web application.
         `}
-        liveCode="https://www.fashionmarketingagency.com.br/"
-        sourceCode="https://github.com/marceloaraujodev/fma.git"
+        liveCode="https://www.qrcodelove.com"
+        sourceCode="https://github.com/marceloaraujodev/lovebirds"
       />
 
       <Project
