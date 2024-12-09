@@ -51,6 +51,20 @@ export default function Projects() {
       </Container>
 
       <Project
+        mainImg="/qrcodelove.jpg"
+        leftImg="/qrcodelove-2.jpg"
+        title="Marketing Agency"
+        description={`This is a micro SAAS for gifts, using nextjs, stripe as payment gateway, mongodb for the database.<br /><br />
+
+        For seamless API communication, Axios is used, with Nodemailer handling secure email functionality and post purchases<br /><br />
+
+        The stack is optimized for performance, interactivity, and scalability, ensuring a robust and responsive web application.
+        `}
+        liveCode="https://www.fashionmarketingagency.com.br/"
+        sourceCode="https://github.com/marceloaraujodev/fma.git"
+      />
+
+      <Project
         mainImg="/aphroditeMain.png"
         leftImg="/aphrodite-gallery.jpg"
         title="Yacht Charter"
