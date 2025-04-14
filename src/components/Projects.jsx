@@ -53,7 +53,7 @@ export default function Projects() {
       <Project
         mainImg="/qrcodelove.jpg"
         leftImg="/qrcodelove-2.jpg"
-        title="Marketing Agency"
+        title="QRCodeLove SAAS"
         description={`This is a micro SAAS for gifts, using nextjs, stripe as payment gateway, mongodb for the database.<br /><br />
 
         For seamless API communication, Axios is used, with Nodemailer handling secure email functionality and post purchases<br /><br />
